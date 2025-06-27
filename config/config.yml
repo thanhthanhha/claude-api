@@ -1,0 +1,13 @@
+project_id: fast-planet-441802-r8
+credentials_json: ./credentials/key.json
+region: ap-northeast-2
+model_name: "anthropic.claude-3-5-sonnet-20240620-v1:0"
+customsearch_id: 80201dbece430416c
+prompt_template_path: "./input/react.txt"
+summarize_template_path: "./input/summarize.txt"
+output_trace_path: "./output/trace.txt"
+model_config:
+  max_tokens: 30000
+  temperature: 0.9
+  top_p: 0.999
+  top_k: 248

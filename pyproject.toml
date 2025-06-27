@@ -1,0 +1,31 @@
+[project]
+name = "mcp-agent"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Thanh Ha Saul",email = "lgcns.ntha7@lgcns.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+
+[tool.poetry.dependencies]
+pydantic = "^2.11"
+pydantic_core = "^2.33"
+wikipedia-api = "^0.8.1"
+beautifulsoup4 = "^4.13.4"
+requests = "^2.32.4"
+pyyaml = "^6.0.2"
+boto3 = "^1.38.42"
+nltk = "^3.9.1"
+contractions = "^0.1.73"
+spellchecker = "^0.4"
+
+
+
+[tool.poetry]
+packages = [{include = "agent", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
